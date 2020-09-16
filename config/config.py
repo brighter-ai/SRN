@@ -1,4 +1,4 @@
-{
+config = {
     "shared": {
         "anchor_scales": [2, 2.828427],
         "anchor_ratios": [1.25],
@@ -17,3 +17,4 @@
         "nms_iou_thresh": 0.4
     }
 }
+config["test_rpn_proposal_cfg"].update(config["shared"])
